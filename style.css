@@ -10,7 +10,7 @@
     margin: 0;
 
 }
-
+/********* Sobre *****************/
 body {
     background: var(--color-graybg);
     font-family: 'Merriweather', serif;
@@ -89,3 +89,40 @@ header div a:hover {
 #socialMedia img {
     width: 14px;
 }
+/********* Productos *****************/
+
+#produc-tittle {
+   color: white;
+    text-align: center;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.cards {
+    max-width: 250px;
+    margin: 0 auto;
+}
+.card_image-container img {
+    width: 100%;       
+}
+.card {
+    background-color: rgba(0, 0, 0, 0.13)  
+}
+.card_info {
+    padding: 15px;
+    color: white;
+    text-align: center;
+}
+.card_info h1 {
+    font-size: 20px;
+    line-height: 30px;
+}
+.card_info h2 {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+
