@@ -33,6 +33,10 @@ header div {
     text-align: left;
                   
 }
+
+#pageatual {
+    color: black;
+}
 header div a {
    color: var(--color-lightgray);
    font-size: 18px;
