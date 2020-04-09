@@ -168,7 +168,44 @@ header div a:hover {
     font-size: 14px;
     line-height: 24px;
     width: 550px;
-    padding-top: 10px;
-    
-    
+    padding-top: 10px;       
 }
+
+/* ==== Contacto ==== */
+
+#contactowraper {
+    color: white;
+    margin-left: 150px;
+    margin-top: 50px;
+}
+
+.delivery {
+    text-align: center;
+}
+
+.delivery h1{
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.delivery h2{
+    font-size: 20px;
+    line-height: 40px;
+    font-weight: normal;
+}
+.delivery a{
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid;
+    padding-bottom: 2px;
+}
+
+.map_horario{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   
+}
+
