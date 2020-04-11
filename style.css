@@ -206,6 +206,53 @@ header div a:hover {
     margin-top: 50px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-   
 }
 
+#cont_map {
+    color: white;
+    text-align: right;
+    margin-right: 50px;
+    position: relative;
+}
+
+#cont_map img {
+    border-radius: 100px;
+    width: 350px;
+
+}
+
+#cont_map div {
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    position: absolute;
+    right: 0;
+}
+
+#cont_map div img {
+    width: 30px;
+    border-radius: 0px;
+}
+
+#socialMedia_contacto {
+    text-align: left;
+    margin-top: 20px;
+    
+    
+} 
+#socialMedia_contacto a {
+    font-size: 15px;
+    line-height: 15px;
+    text-decoration: none;
+    color: white;  
+        
+}
+
+#socialMedia_contacto a:hover {
+    border-bottom: 1px solid;
+}
+#socialMedia_contacto img {
+    width: 35px;
+    margin-top: 10px;
+    vertical-align: middle;
+    margin: 5px;
+}
