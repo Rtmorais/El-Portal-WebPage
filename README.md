@@ -1,2 +1,2 @@
-# El-Portal-WebPage
-Web page for a small local food market.
+# El Portal WebPage
+Webpage and logo for a small local deli.
