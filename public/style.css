@@ -1,258 +1,264 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;1,700&display=swap');
 :root {
-    --color-graybg: #252525;
-    --color-lightgray: #696969;
+	--color-graybg: #252525;
+	--color-lightgray: #696969;
 }
 
 * {
-    padding: 0;
-    border: 0;
-    margin: 0;
-
+	padding: 0;
+	border: 0;
+	margin: 0;
 }
 /********* Sobre *****************/
 body {
-    background: var(--color-graybg);
-    font-family: 'Merriweather', serif;
-    
+	background: var(--color-graybg);
+	font-family: 'Merriweather', serif;
 }
 header {
-    background-color: white;
-    padding: 10px;                
+	background-color: white;
+	padding: 10px;
 }
 header img {
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    z-index: 0;
-    border-radius: 50%;
-    width: 150px;
-
-    }
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	z-index: 0;
+	border-radius: 50%;
+	width: 150px;
+}
 header div {
-    text-align: center;
-                  
+	text-align: center;
 }
 
 #pageatual {
-    color: black;
+	color: black;
 }
 header div a {
-   color: var(--color-lightgray);
-   font-size: 18px;
-   line-height: 28px;
-   padding-left: 150px;
-   text-decoration: none;
-   font-weight: bolder;      
+	color: var(--color-lightgray);
+	font-size: 18px;
+	line-height: 28px;
+	padding-left: 150px;
+	text-decoration: none;
+	font-weight: bolder;
 }
 header div a:hover {
-   color: black;
-   transition: 500ms;       
+	color: black;
+	transition: 500ms;
 }
-
 
 #about {
-    text-align: center;
-    color: white;
-    padding-top: 30px;
+	text-align: center;
+	color: white;
+	padding-top: 30px;
 }
 #about img {
-    border-radius: 50px;
-    width: 500px;
+	border-radius: 50px;
+	width: 500px;
 }
 
 #about h1 {
-    font-size: 34px;
-    line-height: 44px;
-    font-weight: bold;
-    margin-bottom: 10px;
+	font-size: 34px;
+	line-height: 44px;
+	font-weight: bold;
+	margin-bottom: 10px;
 }
 #about p {
-    font-size: 14px;
-    line-height: 24px;
-    font-weight: normal;
-    margin-top: 3px;
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: normal;
+	margin-top: 3px;
 }
 
 #socialMedia {
-    text-align: center;
-    margin-top: 50px;
-    
-} 
+	text-align: center;
+	margin-top: 50px;
+}
 #socialMedia a {
-    font-size: 10px;
-    line-height: 20px;
-    text-decoration: none;
-    color: white;
-    margin: 5px;
-    
+	font-size: 10px;
+	line-height: 20px;
+	text-decoration: none;
+	color: white;
+	margin: 5px;
 }
 #socialMedia a:hover {
-    border-bottom: 1px solid;
+	border-bottom: 1px solid;
 }
 #socialMedia img {
-    width: 20px;
+	width: 20px;
 }
 /********* Productos *****************/
 
 #produc-tittle {
-   color: white;
-    text-align: center;
-    font-size: 18px;
-    line-height: 28px;
-    font-weight: bold;
-    margin-top: 50px;
-    margin-bottom: 50px;
+	color: white;
+	text-align: center;
+	font-size: 18px;
+	line-height: 28px;
+	font-weight: bold;
+	margin-top: 50px;
+	margin-bottom: 50px;
 }
 
 .cards {
-    max-width: 600px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 10px;
-    
+	max-width: 600px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 10px;
 }
 
 .card_image-container img {
-    width: 100%;
-    border-radius: 50px 50px 0 0;   
-         
+	width: 100%;
+	border-radius: 50px 50px 0 0;
 }
 .card {
-    background-color: rgba(0, 0, 0, 0.13);
-    border-radius: 50px; 
-    border: 1px solid white;
+	background-color: white;
+	border-radius: 50px;
+	border: 1px solid white;
+	display: grid;
 }
 .card_info {
-    padding: 15px;
-    color: white;
-    text-align: center;
+	padding: 15px;
+	color: var(--color-graybg);
+	text-align: center;
 }
 .card_info h1 {
-    font-size: 20px;
-    line-height: 30px;
-    border-bottom: 1px solid;
+	font-size: 20px;
+	line-height: 30px;
+	border-bottom: 1px solid;
 }
 .card_info h2 {
-    font-size: 12px;
-    line-height: 22px;
-    
+	font-size: 12px;
+	line-height: 22px;
 }
 
 /* =====Servicios===== */
 
 .cards_servicios {
-    color: white;
-    text-align: left;
-    margin-left: 200px;
-    margin-top: 100px;
+	color: white;
+	text-align: left;
+	margin-left: 200px;
+	margin-top: 100px;
 }
 
-.card_servicios{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-    max-width: 650px;
+.card_servicios {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 10px;
+	max-width: 650px;
 }
 
 .card_servicios img {
-    background-color: white;
-    max-width: 400px;
-    padding: 20px;
-    border-radius: 15px;
-    margin-bottom: 30px;    
+	background-color: white;
+	max-width: 400px;
+	padding: 20px;
+	border-radius: 15px;
+	margin-bottom: 30px;
 }
 
 .card_servicios p {
-    font-size: 14px;
-    line-height: 24px;
-    width: 550px;
-    padding-top: 10px;       
+	font-size: 14px;
+	line-height: 24px;
+	width: 550px;
+	padding-top: 10px;
 }
 
 /* ==== Contacto ==== */
 
 #contactowraper {
-    color: white;
-    margin-left: 150px;
-    margin-top: 50px;
+	color: white;
+	margin-left: 150px;
+	margin-top: 50px;
 }
 
 .delivery {
-    text-align: center;
+	text-align: center;
 }
 
-.delivery h1{
-    font-size: 40px;
-    line-height: 50px;
-    font-weight: 700;
-    text-decoration: underline;
+.delivery h1 {
+	font-size: 40px;
+	line-height: 50px;
+	font-weight: 700;
+	text-decoration: underline;
 }
 
-.delivery h2{
-    font-size: 20px;
-    line-height: 40px;
-    font-weight: normal;
+.delivery h2 {
+	font-size: 20px;
+	line-height: 40px;
+	font-weight: normal;
 }
-.delivery a{
-    color: white;
-    text-decoration: none;
-    border-bottom: 1px solid;
-    padding-bottom: 2px;
+.delivery a {
+	color: white;
+	text-decoration: none;
+	border-bottom: 1px solid;
+	padding-bottom: 2px;
 }
 
-.map_horario{
-    margin-top: 50px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+.map_horario {
+	margin-top: 50px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
 }
 
 #cont_map {
-    color: white;
-    text-align: right;
-    margin-right: 50px;
-    position: relative;
+	color: white;
+	text-align: right;
+	margin-right: 50px;
+	position: relative;
 }
 
 #cont_map img {
-    border-radius: 100px;
-    width: 350px;
-
+	border-radius: 100px;
+	width: 350px;
 }
 
 #cont_map div {
-    display: flex;
-    grid-template-columns: 1fr 1fr;
-    position: absolute;
-    right: 0;
+	display: flex;
+	grid-template-columns: 1fr 1fr;
+	position: absolute;
+	right: 0;
 }
 
 #cont_map div img {
-    width: 30px;
-    border-radius: 0px;
+	width: 30px;
+	border-radius: 0px;
 }
 
 #socialMedia_contacto {
-    text-align: left;
-    margin-top: 20px;
-    
-    
-} 
+	text-align: left;
+	margin-top: 20px;
+}
 #socialMedia_contacto a {
-    font-size: 15px;
-    line-height: 15px;
-    text-decoration: none;
-    color: white;  
-        
+	font-size: 15px;
+	line-height: 15px;
+	text-decoration: none;
+	color: white;
 }
 
 #socialMedia_contacto a:hover {
-    border-bottom: 1px solid;
+	border-bottom: 1px solid;
 }
 #socialMedia_contacto img {
-    width: 35px;
-    margin-top: 10px;
-    vertical-align: middle;
-    margin: 5px;
+	width: 35px;
+	margin-top: 10px;
+	vertical-align: middle;
+	margin: 5px;
+}
+/* ERROR 404 */
+
+#error404 {
+	text-align: center;
+	margin-top: 100px;
+	color: white;
+}
+
+#error404 img {
+	width: 300px;
+}
+
+#error404 h1,
+h2 {
+	color: white;
+	font-size: 20px;
+	line-height: 40px;
+	font-weight: 700;
 }

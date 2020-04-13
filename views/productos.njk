@@ -1,4 +1,4 @@
-{% extends "layout.html" %}
+{% extends "layout.njk" %}
 
 {% block content %}
 
@@ -7,67 +7,18 @@
         </div>
 
          <section class="cards">
+            {% for item in items %}
             <div class="card">
                 <div class="card_image-container">
-                    <img src="https://scontent.faep9-1.fna.fbcdn.net/v/t1.0-9/69816737_3035252506547267_844441899547754496_n.png?_nc_cat=109&_nc_sid=85a577&_nc_eui2=AeEevMqSs6drm3BWnBk6rW1uY8Lon0BZcuwOMh9ewVV8UTSTjSaliGosEW3ctBM02GfvsEdOmZmn-YYUBVSu70QadOJ90M3QRf4_fR1DQdIoIw&_nc_oc=AQnfG16hXhG0BoNseiwS5nnigdxnXS_6VA5DtTwi9LqP3qmUzigxTVnh9Q1KReJbPMw&_nc_ht=scontent.faep9-1.fna&oh=36adb16b3d05c7d1b8c1c5422a205b05&oe=5EA97EFE" href="http://brennan.com.ar/" alt="brennan">
-                </div>
-                
-                <div class="card_info">
-                    <h1>Brennan</h1>
-                    <h2>Variedad de Especias Ahumadas y Mostazas</h2>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card_image-container">
-                    <img src="https://scontent.faep9-1.fna.fbcdn.net/v/t1.0-9/13925092_1645244965803286_1085452354203286379_n.jpg?_nc_cat=109&_nc_sid=85a577&_nc_eui2=AeGoQ1KWPn1BoWF2kzjBoM2r30-GNWA9hMHa5dKIc-hcSqgSsg5fmwxenkG7ZHCx-crh1qx0lJ_pv9CvU0bQKmBrlzLZtpx_CrNSKMuEKdbNtA&_nc_oc=AQnn6k6BW-amApwHRa6hj7PYZisN9IwaVNq5ZTTiUS6dQM9VXN3vKNUcopy9ubpYXgY&_nc_ht=scontent.faep9-1.fna&oh=c678e7c03500e58e830bcc622c16067f&oe=5EA84F16" alt="Munini">
+                  <img src="{{ item.img }}" alt="{{item.tittle}}">  
                 </div>
                 <div class="card_info">
-                    <h1>Munini</h1>
-                    <h2>Pescados</h2>
+                    <h1>{{item.tittle}}</h1>
+                    <h2>{{item.description}}</h2>
                 </div>
             </div>
-
-            <div class="card">
-                <div class="card_image-container">
-                    <img src=https://scontent.faep9-1.fna.fbcdn.net/v/t31.0-8/p960x960/26685688_1596907310355129_8490070644994203649_o.jpg?_nc_cat=1&_nc_sid=85a577&_nc_eui2=AeEFgiEPpjTB-UZFrAR8z_7LkfHnIWvlui1Pc_RbU3YMkQtcyPjcj6zNbj31X775JxtKVTY2cgTgTL3cGwRnqOQNvh77Z4uXSX2sAVeg0xczfg&_nc_oc=AQnA6WG62mg8s8RNSSm18-l1eXRT1AKec0TH2EBs9BMvhnmVKFS7d_n3Ig6OE3yxgUM&_nc_ht=scontent.faep9-1.fna&_nc_tp=6&oh=ef45a0be7db73a7ad5bb9a8fc60b027b&oe=5EA76A4A "alt="brennan">
-                </div>
-                <div class="card_info">
-                    <h1>McCain</h1>
-                    <h2>Variedad de Papas</h2>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card_image-container">
-                    <img src="http://www.eldiariodeturismo.com.ar/wp-content/uploads/2017/08/PALADINI-LOGO-16-9.png" alt="Paladini">
-                </div>
-                <div class="card_info">
-                    <h1>Paladini</h1>
-                    <h2>Variedad de Fiambres</h2>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card_image-container">
-                    <img src="http://staticf5a.diaadia.info/sites/default/files/styles/landscape_1008_566/public/nota_periodistica/milanesas.jpg" alt="Milanesas">
-                </div>
-                <div class="card_info">
-                    <h1>Milanesas / Supremas Caseras</h1>
-                    <h2>Las mejores de la Cuidad</h2>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card_image-container">
-                    <img src="https://scontent.faep9-1.fna.fbcdn.net/v/t1.0-9/56985460_430404427504251_2834219592593702912_n.jpg?_nc_cat=109&_nc_sid=85a577&_nc_eui2=AeHp71a1znagiOe-YSPwleeHdf1NjGg1zNJ1_U2MaDXM0k3g5o95mZHWzNs2IKPUqlRDtNmppKG8wWNUdqfkYMuM&_nc_oc=AQltIe1J-6hGTlDy7rFs2_wn9y9bCyHdJZ6mdyYEH9vCEXV-A0Xj4aO2x1dF2-61KvQ&_nc_ht=scontent.faep9-1.fna&oh=2caf339b401d2bf08de1a4db65def0f8&oe=5EB24F64" alt="Lactear">
-                </div>
-                <div class="card_info">
-                    <h1>Lactear</h1>
-                    <h2>Variedad de Quesos</h2>
-                </div>
-            </div>
+            {% endfor %}
           </section>
-
+    
    
 {% endblock %}
